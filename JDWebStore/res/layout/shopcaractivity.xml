@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/shopcart_title" />
+
+    <RelativeLayout
+        android:id="@+id/empty_shopcart_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/title"
+        android:background="@drawable/android_layout_bg" >
+
+        <LinearLayout
+            android:id="@+id/iv_et"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/android_top_left"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/cart_no_data_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="5dp"
+                android:text="您的购物车还是空的，快去选购吧"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/emshopcart_go"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_et"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="促销大卖场"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/shop_cart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:background="@drawable/tab_bg"
+        android:visibility="gone" >
+
+        <CheckBox
+            android:id="@+id/shopcart_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp" />
+
+        <RelativeLayout
+            android:id="@+id/haha"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/shopcart_check"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/shopcart_truemoney1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="总计"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/shopcart_truemoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/shopcart_truemoney1"
+                android:maxLines="1"
+                android:minWidth="180dp"
+                android:text="￥0.00"
+                android:textColor="#ff0000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/shopcart_zongmoney1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/shopcart_truemoney1"
+                android:text="全部金额："
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/shopcart_zongmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/shopcart_zongmoney1"
+                android:layout_toRightOf="@id/shopcart_zongmoney1"
+                android:text="￥0.00"
+                android:textColor="#ff0000"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/shopcart_backmoney1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/shopcart_zongmoney1"
+                android:layout_marginLeft="7dp"
+                android:layout_toRightOf="@id/shopcart_zongmoney"
+                android:text="返现："
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/shopcart_backmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/shopcart_zongmoney1"
+                android:layout_toRightOf="@id/shopcart_backmoney1"
+                android:text="￥0.00"
+                android:textColor="#ff0000"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/shopcart_pay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/selector_cart_button"
+                android:gravity="center"
+                android:text="去结算"
+                android:textColor="#ffffff" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/shopcart_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/shop_cart"
+        android:background="@drawable/mq_widget_bg"
+        android:divider="#ffffff"
+        android:dividerHeight="2dp"
+        android:visibility="gone" >
+    </ListView>
+
+</RelativeLayout>

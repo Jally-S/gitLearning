@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <ImageView
+    android:id="@+id/homeactivity_listview_itemthree_one_HorizontalScrollView_img"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/android_jd_notification"
+    android:scaleType="centerInside"/>
+    <TextView 
+    android:id="@+id/homeactivity_listview_itemthree_one_HorizontalScrollView_tv"
+    android:layout_below="@+id/homeactivity_listview_itemthree_one_HorizontalScrollView_img"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center" 
+    android:text="商品信息"/>
+
+</RelativeLayout>

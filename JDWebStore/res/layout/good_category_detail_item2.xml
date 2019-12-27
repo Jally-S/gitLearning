@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+>   
+<ImageView
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:id="@+id/gallery_imageview"
+    android:src="@drawable/index_icon1"
+    />
+<TextView android:layout_width="80dp"
+    android:layout_below="@id/gallery_imageview"
+    android:layout_height="wrap_content"
+    android:id="@+id/gallery_name"
+    android:maxLines="2"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:text="小猫"/>
+<TextView android:layout_width="80dp"
+    android:layout_below="@id/gallery_name"
+    android:layout_height="wrap_content"
+    android:id="@+id/gallery_price"
+    android:text="￥：99"
+    android:maxLines="1"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:textColor="#ff0000"
+    />
+</RelativeLayout>

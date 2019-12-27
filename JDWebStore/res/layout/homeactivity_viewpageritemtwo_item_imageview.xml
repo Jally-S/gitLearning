@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="215dp"
+    android:background="@drawable/android_top_left" >
+    <ImageView
+        android:id="@+id/homeactivity_viewpageritemtwo_item_imageview"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:scaleType="fitXY" >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/homeactivity_viewpageritemtwo_item_txview"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/homeactivity_viewpageritemtwo_item_imageview"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="截止时间"
+        android:layout_marginRight="25dp"
+        android:textColor="#a9a9a9" />
+
+</RelativeLayout>

@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckLoginId</servlet-name>
+    <servlet-class>org.jvsun.servlet.CheckLoginId</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DisplayMenu</servlet-name>
+    <servlet-class>org.jvsun.servlet.DisplayMenu</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WorkerQuery</servlet-name>
+    <servlet-class>org.jvsun.servlet.WorkerQuery</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WorkerUpdate</servlet-name>
+    <servlet-class>org.jvsun.servlet.WorkerUpdate</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WorkerFindByWorkerId</servlet-name>
+    <servlet-class>org.jvsun.servlet.WorkerFindByWorkerId</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WorkerAdd</servlet-name>
+    <servlet-class>org.jvsun.servlet.WorkerAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RoleQuery</servlet-name>
+    <servlet-class>org.jvsun.servlet.RoleQuery</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RoleFindByRoleIDId</servlet-name>
+    <servlet-class>org.jvsun.servlet.RoleFindByRoleIDId</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RoleUpdate</servlet-name>
+    <servlet-class>org.jvsun.servlet.RoleUpdate</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RoleAdd</servlet-name>
+    <servlet-class>org.jvsun.servlet.RoleAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MenuQuery</servlet-name>
+    <servlet-class>org.jvsun.servlet.MenuQuery</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MenuAdd</servlet-name>
+    <servlet-class>org.jvsun.servlet.MenuAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MenuUpdate</servlet-name>
+    <servlet-class>org.jvsun.servlet.MenuUpdate</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MenuFindByMenuId</servlet-name>
+    <servlet-class>org.jvsun.servlet.MenuFindByMenuId</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ManRoleQuery</servlet-name>
+    <servlet-class>org.jvsun.servlet.ManRoleQuery</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ManRoleIns</servlet-name>
+    <servlet-class>org.jvsun.servlet.ManRoleIns</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ManRoleDel</servlet-name>
+    <servlet-class>org.jvsun.servlet.ManRoleDel</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RoleMenuQuery</servlet-name>
+    <servlet-class>org.jvsun.servlet.RoleMenuQuery</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RoleMenuDel</servlet-name>
+    <servlet-class>org.jvsun.servlet.RoleMenuDel</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RoleMenuIns</servlet-name>
+    <servlet-class>org.jvsun.servlet.RoleMenuIns</servlet-class>
+  </servlet>
+ <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QueryFeedBack</servlet-name>
+    <servlet-class>org.jvsun.servlet.QueryFeedBack</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectProduct</servlet-name>
+    <servlet-class>org.jvsun.servlet.SelectProduct</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddFeedBack</servlet-name>
+    <servlet-class>org.jvsun.servlet.AddFeedBack</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FeedBackUpd</servlet-name>
+    <servlet-class>org.jvsun.servlet.FeedBackUpd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FeedBackFindByCustId</servlet-name>
+    <servlet-class>org.jvsun.servlet.FeedBackFindByCustId</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FeedBackDel</servlet-name>
+    <servlet-class>org.jvsun.servlet.FeedBackDel</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RepairQuery</servlet-name>
+    <servlet-class>org.jvsun.servlet.RepairQuery</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RepairAdd</servlet-name>
+    <servlet-class>org.jvsun.servlet.RepairAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RepairFindByCustId</servlet-name>
+    <servlet-class>org.jvsun.servlet.RepairFindByCustId</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RepairDel</servlet-name>
+    <servlet-class>org.jvsun.servlet.RepairDel</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RepairUpd</servlet-name>
+    <servlet-class>org.jvsun.servlet.RepairUpd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Logout</servlet-name>
+    <servlet-class>org.jvsun.servlet.Logout</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UserInfo</servlet-name>
+    <servlet-class>org.jvsun.servlet.UserInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WorkerInfoUpd</servlet-name>
+    <servlet-class>org.jvsun.servlet.WorkerInfoUpd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CustomerInfoUpd</servlet-name>
+    <servlet-class>org.jvsun.servlet.CustomerInfoUpd</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>AddCustomer</servlet-name>
+    <servlet-class>org.jvsun.servlet.AddCustomer</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CustomerQuery</servlet-name>
+    <servlet-class>org.jvsun.servlet.CustomerQuery</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CustomerUpd</servlet-name>
+    <servlet-class>org.jvsun.servlet.CustomerUpd</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DelCustomer</servlet-name>
+    <servlet-class>org.jvsun.servlet.DelCustomer</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindCustomerById</servlet-name>
+    <servlet-class>org.jvsun.servlet.FindCustomerById</servlet-class>
+  </servlet>
+ 
+
+	<servlet>
+		<servlet-name>AddProduct</servlet-name>
+		<servlet-class>org.jvsun.servlet.AddProduct</servlet-class>
+	</servlet>
+  <servlet>
+		<servlet-name>ProductQuery</servlet-name>
+		<servlet-class>org.jvsun.servlet.ProductQuery</servlet-class>
+	</servlet>
+  <servlet>
+    <servlet-name>DelProduct</servlet-name>
+    <servlet-class>org.jvsun.servlet.DelProduct</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindProductById</servlet-name>
+    <servlet-class>org.jvsun.servlet.FindProductById</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ProductUpd</servlet-name>
+    <servlet-class>org.jvsun.servlet.ProductUpd</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddCompetitor</servlet-name>
+    <servlet-class>org.jvsun.servlet.AddCompetitor</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CompetitorQuery</servlet-name>
+    <servlet-class>org.jvsun.servlet.CompetitorQuery</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DelCompetitor</servlet-name>
+    <servlet-class>org.jvsun.servlet.DelCompetitor</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindCompetitorById</servlet-name>
+    <servlet-class>org.jvsun.servlet.FindCompetitorById</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CompetitorUpd</servlet-name>
+    <servlet-class>org.jvsun.servlet.CompetitorUpd</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddCompetitorProduct</servlet-name>
+    <servlet-class>org.jvsun.servlet.AddCompetitorProduct</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CompetitorProductQuery</servlet-name>
+    <servlet-class>org.jvsun.servlet.CompetitorProductQuery</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindCompetitorProductById</servlet-name>
+    <servlet-class>org.jvsun.servlet.FindCompetitorProductById</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CompetitorProductUpd</servlet-name>
+    <servlet-class>org.jvsun.servlet.CompetitorProductUpd</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DelCompetitorProduct</servlet-name>
+    <servlet-class>org.jvsun.servlet.DelCompetitorProduct</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>VerifyCodeServlet</servlet-name>
+    <servlet-class>org.jvsun.servlet.VerifyCodeServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddNeed</servlet-name>
+    <servlet-class>org.jvsun.servlet.AddNeed</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NeedQuery</servlet-name>
+    <servlet-class>org.jvsun.servlet.NeedQuery</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ContractQuery</servlet-name>
+    <servlet-class>org.jvsun.servlet.ContractQuery</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpServlet</servlet-name>
+    <servlet-class>org.jvsun.servlet.UpServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindNeedById</servlet-name>
+    <servlet-class>org.jvsun.servlet.FindNeedById</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NeedUpd</servlet-name>
+    <servlet-class>org.jvsun.servlet.NeedUpd</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>QueryRepair</servlet-name>
+    <servlet-class>org.jvsun.servlet.QueryRepair</servlet-class>
+  </servlet>
+	<servlet>
+    <servlet-name>RepairReturnQuery</servlet-name>
+    <servlet-class>org.jvsun.servlet.RepairReturnQuery</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RepairReturnAdd</servlet-name>
+    <servlet-class>org.jvsun.servlet.RepairReturnAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RepairReturnDel</servlet-name>
+    <servlet-class>org.jvsun.servlet.RepairReturnDel</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RepairReturnUpd</servlet-name>
+    <servlet-class>org.jvsun.servlet.RepairReturnUpd</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>RepairReturnFindByReptId</servlet-name>
+    <servlet-class>org.jvsun.servlet.RepairReturnFindByReptId</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FeedBackQuery</servlet-name>
+    <servlet-class>org.jvsun.servlet.FeedBackQuery</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FeedBackReturnAdd</servlet-name>
+    <servlet-class>org.jvsun.servlet.FeedBackReturnAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FeedBackReturnQuery</servlet-name>
+    <servlet-class>org.jvsun.servlet.FeedBackReturnQuery</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FeedBackReturnDel</servlet-name>
+    <servlet-class>org.jvsun.servlet.FeedBackReturnDel</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FeedBackReturnUpd</servlet-name>
+    <servlet-class>org.jvsun.servlet.FeedBackReturnUpd</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FeedBackReturnFindByfeedId</servlet-name>
+    <servlet-class>org.jvsun.servlet.FeedBackReturnFindByfeedId</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddContract</servlet-name>
+    <servlet-class>org.jvsun.servlet.AddContract</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ContractUpd</servlet-name>
+    <servlet-class>org.jvsun.servlet.ContractUpd</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindContractById</servlet-name>
+    <servlet-class>org.jvsun.servlet.FindContractById</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindCusProById</servlet-name>
+    <servlet-class>org.jvsun.servlet.FindCusProById</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CusProAdd</servlet-name>
+    <servlet-class>org.jvsun.servlet.CusProAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CusProDel</servlet-name>
+    <servlet-class>org.jvsun.servlet.CusProDel</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>DelContract</servlet-name>
+    <servlet-class>org.jvsun.servlet.DelContract</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ModifyPassword</servlet-name>
+    <servlet-class>org.jvsun.servlet.ModifyPassword</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>CheckLoginId</servlet-name>
+    <url-pattern>/CheckLoginId</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DisplayMenu</servlet-name>
+    <url-pattern>/DisplayMenu</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WorkerQuery</servlet-name>
+    <url-pattern>/WorkerQuery</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WorkerUpdate</servlet-name>
+    <url-pattern>/WorkerUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WorkerFindByWorkerId</servlet-name>
+    <url-pattern>/WorkerFindByWorkerId</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WorkerAdd</servlet-name>
+    <url-pattern>/WorkerAdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RoleQuery</servlet-name>
+    <url-pattern>/RoleQuery</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RoleFindByRoleIDId</servlet-name>
+    <url-pattern>/RoleFindByRoleIDId</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RoleUpdate</servlet-name>
+    <url-pattern>/RoleUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RoleAdd</servlet-name>
+    <url-pattern>/RoleAdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MenuQuery</servlet-name>
+    <url-pattern>/MenuQuery</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MenuAdd</servlet-name>
+    <url-pattern>/MenuAdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MenuUpdate</servlet-name>
+    <url-pattern>/MenuUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MenuFindByMenuId</servlet-name>
+    <url-pattern>/MenuFindByMenuId</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ManRoleQuery</servlet-name>
+    <url-pattern>/ManRoleQuery</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ManRoleIns</servlet-name>
+    <url-pattern>/ManRoleIns</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ManRoleDel</servlet-name>
+    <url-pattern>/ManRoleDel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RoleMenuQuery</servlet-name>
+    <url-pattern>/RoleMenuQuery</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RoleMenuDel</servlet-name>
+    <url-pattern>/RoleMenuDel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RoleMenuIns</servlet-name>
+    <url-pattern>/RoleMenuIns</url-pattern>
+  </servlet-mapping>	
+  <servlet-mapping>
+    <servlet-name>QueryFeedBack</servlet-name>
+    <url-pattern>/QueryFeedBack</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectProduct</servlet-name>
+    <url-pattern>/SelectProduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddFeedBack</servlet-name>
+    <url-pattern>/AddFeedBack</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedBackUpd</servlet-name>
+    <url-pattern>/FeedBackUpd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedBackFindByCustId</servlet-name>
+    <url-pattern>/FeedBackFindByCustId</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedBackDel</servlet-name>
+    <url-pattern>/FeedBackDel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RepairQuery</servlet-name>
+    <url-pattern>/RepairQuery</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RepairAdd</servlet-name>
+    <url-pattern>/RepairAdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RepairFindByCustId</servlet-name>
+    <url-pattern>/RepairFindByCustId</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RepairDel</servlet-name>
+    <url-pattern>/RepairDel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RepairUpd</servlet-name>
+    <url-pattern>/RepairUpd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Logout</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserInfo</servlet-name>
+    <url-pattern>/UserInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>WorkerInfoUpd</servlet-name>
+    <url-pattern>/WorkerInfoUpd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CustomerInfoUpd</servlet-name>
+    <url-pattern>/CustomerInfoUpd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddCustomer</servlet-name>
+    <url-pattern>/AddCustomer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CustomerQuery</servlet-name>
+    <url-pattern>/CustomerQuery</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CustomerUpd</servlet-name>
+    <url-pattern>/CustomerUpd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelCustomer</servlet-name>
+    <url-pattern>/DelCustomer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindCustomerById</servlet-name>
+    <url-pattern>/FindCustomerById</url-pattern>
+  </servlet-mapping>
+  
+    <servlet-mapping>
+    <servlet-name>AddProduct</servlet-name>
+    <url-pattern>/AddProduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProductQuery</servlet-name>
+    <url-pattern>/ProductQuery</url-pattern>
+  </servlet-mapping>
+   
+  <servlet-mapping>
+    <servlet-name>DelProduct</servlet-name>
+    <url-pattern>/DelProduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindProductById</servlet-name>
+    <url-pattern>/FindProductById</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ProductUpd</servlet-name>
+    <url-pattern>/ProductUpd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddCompetitor</servlet-name>
+    <url-pattern>/AddCompetitor</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CompetitorQuery</servlet-name>
+    <url-pattern>/CompetitorQuery</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelCompetitor</servlet-name>
+    <url-pattern>/DelCompetitor</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindCompetitorById</servlet-name>
+    <url-pattern>/FindCompetitorById</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CompetitorUpd</servlet-name>
+    <url-pattern>/CompetitorUpd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddCompetitorProduct</servlet-name>
+    <url-pattern>/AddCompetitorProduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CompetitorProductQuery</servlet-name>
+    <url-pattern>/CompetitorProductQuery</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindCompetitorProductById</servlet-name>
+    <url-pattern>/FindCompetitorProductById</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CompetitorProductUpd</servlet-name>
+    <url-pattern>/CompetitorProductUpd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelCompetitorProduct</servlet-name>
+    <url-pattern>/DelCompetitorProduct</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>VerifyCodeServlet</servlet-name>
+    <url-pattern>/VerifyCodeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddNeed</servlet-name>
+    <url-pattern>/AddNeed</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NeedQuery</servlet-name>
+    <url-pattern>/NeedQuery</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ContractQuery</servlet-name>
+    <url-pattern>/ContractQuery</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpServlet</servlet-name>
+    <url-pattern>/UpServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindNeedById</servlet-name>
+    <url-pattern>/FindNeedById</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NeedUpd</servlet-name>
+    <url-pattern>/NeedUpd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryRepair</servlet-name>
+    <url-pattern>/QueryRepair</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RepairReturnQuery</servlet-name>
+    <url-pattern>/RepairReturnQuery</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RepairReturnAdd</servlet-name>
+    <url-pattern>/RepairReturnAdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RepairDel</servlet-name>
+    <url-pattern>/RepairDel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RepairReturnDel</servlet-name>
+    <url-pattern>/RepairReturnDel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RepairReturnUpd</servlet-name>
+    <url-pattern>/RepairReturnUpd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RepairReturnFindByReptId</servlet-name>
+    <url-pattern>/RepairReturnFindByReptId</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedBackQuery</servlet-name>
+    <url-pattern>/FeedBackQuery</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedBackReturnAdd</servlet-name>
+    <url-pattern>/FeedBackReturnAdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedBackReturnQuery</servlet-name>
+    <url-pattern>/FeedBackReturnQuery</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedBackReturnDel</servlet-name>
+    <url-pattern>/FeedBackReturnDel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedBackReturnUpd</servlet-name>
+    <url-pattern>/FeedBackReturnUpd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedBackReturnFindByfeedId</servlet-name>
+    <url-pattern>/FeedBackReturnFindByfeedId</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddContract</servlet-name>
+    <url-pattern>/AddContract</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ContractUpd</servlet-name>
+    <url-pattern>/ContractUpd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindContractById</servlet-name>
+    <url-pattern>/FindContractById</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindCusProById</servlet-name>
+    <url-pattern>/FindCusProById</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CusProAdd</servlet-name>
+    <url-pattern>/CusProAdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CusProDel</servlet-name>
+    <url-pattern>/CusProDel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelContract</servlet-name>
+    <url-pattern>/DelContract</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModifyPassword</servlet-name>
+    <url-pattern>/ModifyPassword</url-pattern>
+  </servlet-mapping>
+	<!--   访问限制过滤器 -->
+	<filter>  
+	    <filter-name>Limit</filter-name>  
+	    <filter-class>org.jvsun.tools.FilterCRM</filter-class>  
+	    </filter>  
+	<filter-mapping>  
+	    <filter-name>Limit</filter-name>  
+	    <url-pattern>/*</url-pattern>  
+	</filter-mapping> 
+    
+    <!-- 编码过滤器 -->  
+    <filter>  
+        <filter-name>setCharacterEncoding</filter-name>  
+        <filter-class>org.jvsun.tools.EncodingFilter</filter-class>  
+        <init-param>  
+            <param-name>encoding</param-name>  
+            <param-value>utf-8</param-value>  
+        </init-param>  
+    </filter>  
+    <filter-mapping>  
+        <filter-name>setCharacterEncoding</filter-name>  
+        <url-pattern>/*</url-pattern>  
+    </filter-mapping> 
+</web-app>

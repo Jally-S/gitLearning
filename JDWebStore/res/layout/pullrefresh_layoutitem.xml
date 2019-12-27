@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_chat_001" >
+
+    <LinearLayout
+        android:id="@+id/viewPager_itemone_listView_viewPager_titleheadergrideview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 头部 viewPager3D翻转 -->
+
+        <include
+            android:id="@+id/viewPager_itemone_listView_viewPager_itemheader"
+            android:layout_marginTop="2dp"
+            layout="@layout/homeactivity_viewpageritem_itemone_header" />
+
+        <!-- 第一块掌上秒杀 -->
+
+        <include
+            android:id="@+id/viewPager_itemone_listView_viewPager_itemone"
+            android:layout_marginTop="30dp"
+            layout="@layout/homeactivity_viewpageritem_itemone_one" />
+
+        <!-- 第二块 gridview -->
+
+        <include
+            android:id="@+id/viewPager_itemone_listView_viewPager_itemtwo"
+            android:layout_marginTop="2dp"
+            layout="@layout/homeactivity_viewpageritem_itemone_two" />
+    </LinearLayout>
+
+    <!-- 第三第四第五块: 两个ScrolView -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewPager_itemone_listView_viewPager_titleheadergrideview"
+        android:layout_marginTop="2dp"
+        android:orientation="vertical" >
+
+        <include layout="@layout/homeactivity_viewpageritem_itemone_three" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="2dp"
+             >
+
+            <ImageView
+                android:id="@+id/pullrefresh_imageView_Slipe"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/home_slide_promotion" />
+
+            <TextView
+                android:layout_toRightOf="@+id/pullrefresh_imageView_Slipe"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:gravity="center_vertical"
+                android:text="向左滑，更多优惠等你拿..." />
+        </RelativeLayout>
+
+        <include
+            android:id="@+id/viewpager_itemone_four"
+            android:layout_marginTop="2dp"
+            layout="@layout/homeactivity_viewpageritem_itemone_four" />
+
+        <include
+            android:id="@+id/viewpager_itemone_five"
+            android:layout_marginTop="2dp"
+            layout="@layout/homeactivity_viewpageritem_itemone_five" />
+    </LinearLayout>
+
+</RelativeLayout>

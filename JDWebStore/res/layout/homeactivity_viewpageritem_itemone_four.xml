@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="38dp"
+    android:background="@drawable/product_string_item">
+    <ImageView 
+    android:id="@+id/homeactivity_viewpageritem_itemone_four_topimg"
+    android:layout_width="wrap_content"
+    android:layout_height="38dp"
+    android:src="@drawable/home_shopping_icon" 
+     />
+    <TextView 
+    android:id="@+id/homeactivity_viewpageritem_itemone_four_toptv"  
+    android:layout_toRightOf="@+id/homeactivity_viewpageritem_itemone_four_topimg"  
+    android:layout_marginLeft="10dp"
+    android:gravity="center"
+    android:layout_width="wrap_content"
+    android:layout_height="38dp"
+    android:text="热门特惠"  />
+    </RelativeLayout>
+    <com.anjoyo.jd.view.HorzontialListView
+        android:id="@+id/android.widget.Scroller.HorizontalListView_one"
+        android:layout_width="fill_parent"
+        android:layout_height="120dp" />
+</LinearLayout>

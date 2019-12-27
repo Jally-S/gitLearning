@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/edit_product_num_ok_normal"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:text="掌上秒杀"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/spickButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/search_button"
+            android:text="秒杀秘籍"
+            android:layout_marginRight="5dp"
+            android:textColor="#ffffff" />
+    </RelativeLayout>
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="10dp"
+	    android:gravity="center_vertical"
+	    android:orientation="vertical" 
+	    android:background="@drawable/tab_bg">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        
+        android:text="掌上专享低价，数量有限，先抢先得！"
+        android:textColor="#ff0000" />
+    </LinearLayout>
+    <ListView 
+        android:layout_marginTop="5dp"
+        android:id="@+id/spickListView"
+        android:layout_width="fill_parent"
+        android:divider="@null"
+        android:dividerHeight="8dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_chat_001"
+        />
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.anjoyo.jd"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/android_jd_notification"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.anjoyo.jd.activity.JDMainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+-
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.anjoyo.jd.activity.TabHostContent"
+            android:screenOrientation="portrait" />
+<!--         <activity
+            android:name="com.anjoyo.jd.activity.TabHostContent"
+            android:screenOrientation="portrait" /> -->
+        <activity
+            android:name="com.anjoyo.jd.activity.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.anjoyo.jd.activity.SearchActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.anjoyo.jd.activity.CategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.anjoyo.jd.activity.ShopCarActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.anjoyo.jd.activity.MyselfActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.anjoyo.jd.activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.anjoyo.jd.activity.FastRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.anjoyo.jd.activity.NormalRegisterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.anjoyo.jd.activity.SpickActivity"
+            android:screenOrientation="portrait" />
+      	<activity android:name="com.anjoyo.jd.activity.CategoryDetialActivity"
+      	    android:screenOrientation="portrait"/>
+      	<activity android:name="com.anjoyo.jd.activity.GoodDetailActivity"
+      	    android:screenOrientation="portrait"/>
+      	<activity android:name="com.anjoyo.jd.activity.ListViewGridViewActivity"
+      	    android:screenOrientation="portrait"/>
+      	<activity android:name="com.anjoyo.jd.activity.SubCategoryActivity"
+      	    android:screenOrientation="portrait"/>
+      	<activity android:name="com.anjoyo.jd.activity.BigPicActivity"
+      	    android:screenOrientation="portrait"/>
+      	<activity android:name="com.anjoyo.jd.activity.SubGoodDetailActivity"
+      	    android:screenOrientation="portrait"/>
+      	<activity android:name="com.anjoyo.jd.activity.SpecificationAcitvity"
+      	    android:screenOrientation="portrait"/>
+      	    
+      	
+    </application>
+
+</manifest>

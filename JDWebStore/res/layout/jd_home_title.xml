@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/android_title_bg"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/jd_home_title_img"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:src="@drawable/home_logo"
+        android:scaleType="centerInside" 
+        />
+
+    <RelativeLayout
+        android:layout_weight="6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" 
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+
+        <EditText
+            android:id="@+id/jd_home_title_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/jd_home_title_edit"
+            android:inputType="text"
+            android:maxLength="12"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:gravity="center_vertical"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/jd_home_title_recording"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:src="@drawable/app_icon_voice" />
+            
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/jd_home_title_camera"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/android_search_button_icon"
+        android:background="@drawable/selector_search2"
+        android:scaleType="centerInside"
+        />
+   
+
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        android:id="@+id/item_ll1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/jianjia_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/manjian_icon"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/jianjiashangp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:text="购200送100，哈哈哈啊哈哈哈啊哈哈" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/shopcart_item_zmoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/item_ll1"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:text="￥0.00"
+        android:textColor="#ff0000" />
+
+    <LinearLayout
+        android:id="@+id/item_ll2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shopcart_item_zmoney"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/shopcar_item_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/shopcart_lv_item_iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/item_ll2"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/item_ll2"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/shopcart_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="保湿霜" />
+
+        <ImageView
+            android:id="@+id/shopcart_item_zeng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shopcart_item_name"
+            android:layout_marginTop="5dp"
+            android:background="@null"
+            android:src="@drawable/android_product_present" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/shopcart_item_zeng"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="7dp"
+            android:src="@drawable/messages_card_arrow" />
+
+        <TextView
+            android:id="@+id/shopcart_item_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shopcart_item_zeng"
+            android:layout_marginTop="5dp"
+            android:text="1234567788" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/shopcart_item_number"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/shopcart_item_shuliang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="数量：" />
+
+            <Button
+                android:id="@+id/shopcart_item_jiansl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/shopcart_item_shuliang"
+                android:layout_toRightOf="@id/shopcart_item_shuliang"
+                android:background="@drawable/selector_add_button" />
+
+            <Button
+                android:id="@+id/shopcart_item_shuliangt"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/shopcart_item_jiansl"
+                android:layout_alignTop="@id/shopcart_item_jiansl"
+                android:layout_toRightOf="@id/shopcart_item_jiansl"
+                android:background="@drawable/edit_text"
+                android:gravity="center"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/shopcart_item_jiasl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/shopcart_item_shuliang"
+                android:layout_toRightOf="@id/shopcart_item_shuliangt"
+                android:background="@drawable/selector_des_button" />
+
+            <TextView
+                android:id="@+id/shopcart_item_singlemoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="3dp"
+                android:text="￥128.00"
+                android:textColor="#ff0000" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

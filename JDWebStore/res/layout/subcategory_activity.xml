@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <RelativeLayout
+            android:id="@+id/category_activity_relativelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/android_title_bg" >
+
+            <TextView
+                android:paddingLeft="10dp"
+                android:layout_centerVertical="true"
+                android:text="11"
+                android:id="@+id/subcategoryname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="#ffffff"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/category_activity_relativelayout" >
+
+            <ListView
+                android:id="@+id/category_activity_listview1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                 android:layout_weight="2" >
+            </ListView>
+             <ListView
+                android:id="@+id/category_activity_listview2"
+                android:layout_width="wrap_content"
+                 android:layout_weight="1"
+                android:layout_height="fill_parent" >
+            </ListView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

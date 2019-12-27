@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="#ebeaea"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/s_tv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                 
+                    android:text="价格" />
+
+                <ImageView
+                    android:id="@+id/s_iv1"
+                    android:layout_width="40dp"
+                    android:layout_height="2dp"
+                    android:layout_alignLeft="@id/s_tv1"
+                    android:layout_alignRight="@id/s_tv1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/tab_indicator_selected"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="40.0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/android_search_gap" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/s_tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    
+                    android:text="销量" />
+
+                <ImageView
+                    android:id="@+id/s_iv2"
+                    android:layout_width="40dp"
+                    android:layout_height="2dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignLeft="@id/s_tv2"
+                    android:layout_alignRight="@id/s_tv2"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/tab_indicator_selected" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="40.0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/android_search_gap" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/s_tv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    
+                    android:text="人气" />
+
+                <ImageView
+                    android:id="@+id/s_iv3"
+                    android:layout_width="40dp"
+                    android:layout_height="2dp"
+                    android:layout_alignLeft="@id/s_tv3"
+                    android:layout_alignRight="@id/s_tv3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/tab_indicator_selected"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1.0dip"
+                android:layout_height="40.0dip"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/android_search_gap" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/s_tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_weight="1"
+                    android:gravity="center"             
+                    android:text="相关度" />
+
+                <ImageView
+                    android:id="@+id/s_iv4"
+                    android:layout_width="40dp"
+                    android:layout_height="2dp"
+                    android:layout_alignLeft="@id/s_tv4"
+                    android:layout_alignRight="@id/s_tv4"
+                    
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/tab_indicator_selected"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_alignBottom="@id/ll"
+            android:background="@android:color/darker_gray" />
+</RelativeLayout>

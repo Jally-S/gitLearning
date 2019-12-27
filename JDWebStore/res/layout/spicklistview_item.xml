@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/spickitem_imgview"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            
+            android:src="@drawable/widget_joy" 
+            android:layout_marginRight="5dp"/>
+        <ImageView
+            android:id="@+id/spickitem_imgview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/app_limit_buy_coming" 
+            android:layout_alignTop="@id/spickitem_imgview"
+            android:layout_alignLeft="@id/spickitem_imgview"/>
+
+        <TextView
+            android:id="@+id/spickitem_tvview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/spickitem_imgview"
+            android:layout_alignTop="@id/spickitem_imgview"
+            android:text="还有00时09分45秒结束"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/spickitem_tvview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spickitem_tvview1"
+            android:layout_toRightOf="@+id/spickitem_imgview"
+            android:ellipsize="end"
+            android:minLines="2"
+            android:text="手机热卖信息" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/spickitem_tvview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/spickitem_tvview2"
+            android:layout_toRightOf="@+id/spickitem_imgview"
+            android:text="原价 ￥:580元" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+         >
+		
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/app_limit_buy_sale_bg" >
+		
+        <TextView
+            android:id="@+id/spickitem_tvview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"            
+            android:text="秒杀价" 
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/spickitem_tvview5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/spickitem_tvview4"
+            android:gravity="center" 
+            android:textColor="#db2929"           
+            android:text="￥:330元 " 
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/spickitem_tvview6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/spickitem_tvview5"
+            android:gravity="center"            
+            android:text="折扣:" 
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:id="@+id/spickitem_tvview7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/spickitem_tvview6"
+            android:gravity="center"            
+            android:text="5.3折" 
+            android:layout_centerVertical="true"
+            android:textColor="#00cc00"
+            />
+    </RelativeLayout>
+        <Button
+            android:id="@+id/spickitem_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/app_alarm_off"   
+             />
+</RelativeLayout>
+
+</LinearLayout>

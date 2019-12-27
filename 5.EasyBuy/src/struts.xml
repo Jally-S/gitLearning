@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <!DOCTYPE struts PUBLIC
+            "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+            "http://struts.apache.org/dtds/struts-2.0.dtd">
+    <struts>
+    	<constant name="struts.action.extension" value="do,,action"></constant>
+    	<!-- <contant name="struts.i18n.encoding" value="gbk"></contant>  -->
+    	<package name="testPackage" extends="struts-default">
+    		<action name="easybuy_*" class="com.hzit.controller.UserAction" method="{1}">
+    			<result name="login_ok" type="redirectAction">easybuy_queryAll</result>
+    			<result name="login_fail">/login.jsp</result>
+    			<result name="query_ok">/main.jsp</result>
+    			<!-- 购物车确认结算跳转到结算页面 -->
+    			<result name="login_cart" type="redirectAction">cart_addOrder</result>
+    		</action>
+    		
+    		<action name="goodsList_*" class="com.hzit.controller.GoodsAction" method="{1}">
+    			<result name="query_ok">/goodsList.jsp</result>
+    			<result name="newsList_ok">/newsList.jsp</result>
+    			<result name="product_ok">/productDeatil.jsp</result>
+    		</action>
+    		
+    		<action name="cart_*" class="com.hzit.controller.CartAction" method="{1}">
+    			<result name="add_ok">/toSettlement.jsp</result>
+    			<result name="addOrder_ok">/settlement2.jsp</result>
+    			<result name="login_fail">/login.jsp</result>
+    			<result name="addOrders_ok">/settlement3.jsp</result>
+    			<result name="getOrderByUserId_ok">/orderList.jsp</result>
+    		</action>
+    		
+    		
+    	</package>
+    </struts>

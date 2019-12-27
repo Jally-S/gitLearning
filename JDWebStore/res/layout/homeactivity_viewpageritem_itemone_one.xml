@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/android_top_left" >
+
+    <ImageView
+        android:id="@+id/spick_leftimg"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@drawable/category_shuma"
+        android:scaleType="matrix"
+        android:src="@drawable/jijiangkaishou" />
+
+    <RelativeLayout
+        android:id="@+id/spick_RelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/spick_leftimg"
+        android:background="@drawable/android_top_left"
+         >
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/spick_timetv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="20sp"
+            android:text="还剩8天8时8分8秒" />
+
+        <TextView
+            android:id="@+id/spick_pricetv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="秒杀价  ￥:88元"
+            android:textColor="#a9a9a9" 
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:id="@+id/spick_pricetv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="原价 ￥:188元"
+            android:textColor="#a9a9a9" 
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/spike_RalativieLayout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="15dp"
+         >
+        <ImageView
+            android:id="@+id/spike_image"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/kakalib_icon_arrow" />
+         <TextView
+            android:id="@+id/spick_textview_spick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="掌上秒杀"
+            android:textSize="20dp" 
+            android:layout_toLeftOf="@id/spike_image"
+            
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

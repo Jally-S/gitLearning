@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/promotion_product_list_layout_background"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_gridView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:background="@drawable/edit_product_num_ok_normal"
+        >
+
+        <TextView
+            android:id="@+id/homeactivity_viewpageritemone_threeSkipe_gridviewup_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="心爱品牌盛典"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/homeactivity_viewpageritemone_threeSkipe_gridviewup_img"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_imgbt_bg"
+            android:text="活动规则"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:layout_width="60dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/homeactivity_viewpageritemone_threeSkipe_gridview"
+        android:layout_below="@+id/relativeLayout_gridView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:horizontalSpacing="15dp"
+        android:verticalSpacing="15dp"
+        android:numColumns="2"/>
+
+</RelativeLayout>

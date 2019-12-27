@@ -1,0 +1,64 @@
+<resources>
+
+    <string name="app_name">SQ_JD</string>
+    
+    <string name="jd_home_title_edit">请输入内容...</string>
+
+   <!-- 下拉刷新内容 -->
+    <string name="pull_to_refresh_pull_label">下拉刷新...</string>
+    <string name="pull_to_refresh_release_label">松手即刷新...</string>
+    <string name="pull_to_refresh_refreshing_label">刷新...</string>
+    <string name="pull_to_refresh_tap_label">点击刷新...</string>
+    
+    <string name="home_activity_Itemtwo">服装城</string>
+    <string name="home_activity_Itemthree">数码家电</string>
+    
+    <string name="homeactivity_listview_itemone_timetv1">还剩</string>
+    <string name="homeactivity_listview_itemone_timetv2">3</string>
+    <string name="homeactivity_listview_itemone_timetv3">天</string>
+    <string name="homeactivity_listview_itemone_timetv4">6</string>
+    <string name="homeactivity_listview_itemone_timetv5">时</string>
+    <string name="homeactivity_listview_itemone_timetv6">58</string>
+    <string name="homeactivity_listview_itemone_timetv7">分</string>
+    <string name="homeactivity_listview_itemone_timetv8">38</string>
+    <string name="homeactivity_listview_itemone_timetv9">秒</string>
+    <string name="homeactivity_listview_itemone_miaoshatv1">秒杀价：</string>
+    <string name="homeactivity_listview_itemone_miaoshatv2">￥98.00</string>
+    <string name="homeactivity_listview_itemone_hands">掌上秒杀</string>
+    
+    
+    <string name="homeactivity_listview_item_four_HorizontalScrollView_radio1">促销卖场</string>
+    <string name="homeactivity_listview_item_four_HorizontalScrollView_radio2">摇啊摇</string>
+    <string name="homeactivity_listview_item_four_HorizontalScrollView_radio3">我的关注</string>
+    <string name="homeactivity_listview_item_four_HorizontalScrollView_radio4">订单状态</string>
+    <string name="homeactivity_listview_item_four_HorizontalScrollView_radio5">充值</string>
+    <string name="homeactivity_listview_item_four_HorizontalScrollView_radio6">团购</string>
+    <string name="homeactivity_listview_item_four_HorizontalScrollView_radio7">彩票</string>
+    <string name="homeactivity_listview_item_four_HorizontalScrollView_radio8">生活旅行</string>
+    <string name="homeactivity_listview_item_four_HorizontalScrollView_radio9">生活旅行</string>
+    
+    
+    
+    
+    <string name="homeactivity_listview_item_five_HorizontalScrollView_radio1">促销卖场</string>
+    <string name="homeactivity_listview_item_five_HorizontalScrollView_radio2">摇啊摇</string>
+    <string name="homeactivity_listview_item_five_HorizontalScrollView_radio3">我的关注</string>
+    <string name="homeactivity_listview_item_five_HorizontalScrollView_radio4">订单状态</string>
+    <string name="homeactivity_listview_item_five_HorizontalScrollView_radio5">充值</string>
+    <string name="homeactivity_listview_item_five_HorizontalScrollView_radio6">团购</string>
+    <string name="homeactivity_listview_item_five_HorizontalScrollView_radio7">彩票</string>
+    <string name="homeactivity_listview_item_five_HorizontalScrollView_radio8">生活旅行</string>
+    <string name="homeactivity_listview_item_five_HorizontalScrollView_radio9">生活旅行</string>
+    
+    
+    
+    <string name="homeactivity_viewpageritemtwo_itemone_HorizontalScrollView_radio1">促销卖场</string>
+    <string name="homeactivity_viewpageritemtwo_itemone_HorizontalScrollView_radio2">摇啊摇</string>
+    <string name="homeactivity_viewpageritemtwo_itemone_HorizontalScrollView_radio3">我的关注</string>
+    <string name="homeactivity_viewpageritemtwo_itemone_HorizontalScrollView_radio4">订单状态</string>
+    <string name="homeactivity_viewpageritemtwo_itemone_HorizontalScrollView_radio5">充值</string>
+    <string name="homeactivity_viewpageritemtwo_itemone_HorizontalScrollView_radio6">团购</string>
+    <string name="homeactivity_viewpageritemtwo_itemone_HorizontalScrollView_radio7">彩票</string>
+    <string name="homeactivity_viewpageritemtwo_itemone_HorizontalScrollView_radio8">生活旅行</string>
+    <string name="homeactivity_viewpageritemtwo_itemone_HorizontalScrollView_radio9">生活旅行</string>
+</resources>

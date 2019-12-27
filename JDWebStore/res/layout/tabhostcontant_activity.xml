@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dp"
+            android:layout_weight="1.0" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.0"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/contentdilplay_LinearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
+            android:background="@drawable/upomp_bypay_keyboard_btn_clear_default"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/contentdilplay_LinearLayout_ImageView0"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/selector_home"
+                 android:scaleType="centerInside"
+                 />
+
+            <ImageView
+                android:id="@+id/contentdilplay_LinearLayout_ImageView1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/selector_search"
+                 android:scaleType="centerInside"
+                 />
+
+            <ImageView
+                android:id="@+id/contentdilplay_LinearLayout_ImageView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/selector_category"
+                 android:scaleType="centerInside"
+               />
+
+            <ImageView
+                android:id="@+id/contentdilplay_LinearLayout_ImageView3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/selector_goodscar"
+                 android:scaleType="centerInside"
+               />
+
+            <ImageView
+                android:id="@+id/contentdilplay_LinearLayout_ImageView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/selector_myself"
+                android:scaleType="centerInside"
+                 />
+        </LinearLayout>
+    </LinearLayout>
+</TabHost>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/good_detail_text_relativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/android_title_bg" >
+
+        <TextView
+            android:id="@+id/good_detail_item_text_textview1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="18dp"
+            android:paddingLeft="10dp"
+            android:text="商品详情"
+            android:textColor="#ffffff"
+             />
+
+        <TextView
+            android:id="@+id/good_detail_text_textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/add_to_car_button_normal"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="分享"
+            android:textColor="#ffffff"
+            android:textSize="24dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/good_detail_text_second_relativelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/good_detail_text_relativelayout"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp" >
+
+        <TextView
+            android:id="@+id/flaggoodno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="商品编号:" />
+
+        <TextView
+            android:id="@+id/goodno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/flaggoodno"
+            android:paddingLeft="10dp"
+            android:text="112233" />
+
+        <TextView
+            android:id="@+id/jingdongjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:text="￥：100.0"
+            android:textColor="#ff0000" />
+
+        <TextView
+            android:id="@+id/flag_jingdongjia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/jingdongjia"
+            android:paddingRight="10dp"
+            android:text="京东价：" />
+    </RelativeLayout>
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/good_detail_text_second_relativelayout" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+        </TabWidget>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/rb1"
+                    style="@style/StyleText1"
+                    android:background="@drawable/selector_gooddetail_imageview"
+                    android:checked="true"
+                    android:text="商品介绍" />
+
+                <RadioButton
+                    android:id="@+id/rb2"
+                    style="@style/StyleText1"
+                    android:background="@drawable/selector_gooddetail_imageview"
+                    android:text="规格参数" />
+
+                <RadioButton
+                    android:id="@+id/rb3"
+                    style="@style/StyleText1"
+                    android:background="@drawable/selector_gooddetail_imageview"
+                    android:text="包装清单" />
+
+                <RadioButton
+                    android:id="@+id/rb4"
+                    style="@style/StyleText1"
+                    android:background="@drawable/selector_gooddetail_imageview"
+                    android:text="售后服务" />
+            </RadioGroup>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/rg"
+                android:paddingTop="10dp" >
+            </FrameLayout>
+        </RelativeLayout>
+    </TabHost>
+
+</RelativeLayout>

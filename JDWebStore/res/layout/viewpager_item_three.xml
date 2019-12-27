@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/home_activity_Itemthree_tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/viewpager_layout_three"
+        android:gravity="center"
+        android:text="@string/home_activity_Itemthree"
+        android:textColor="#ff0000" />
+    <TextView 
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:text="热卖商品"
+        android:gravity="center"
+        android:background="@drawable/product_string_item"
+        />
+    
+    <!-- <include 
+        layout="@layout/homeactivity_viewpageritem_itemthree_one"/> -->
+
+    <ListView
+        android:id="@+id/home_activity_Itemthree_listView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/bg_chat_001" />
+
+</LinearLayout>

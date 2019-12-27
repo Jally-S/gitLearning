@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>userList</title>
+    <link rel="stylesheet" th:href="@{/bootstrap.css}"></link>
+</head>
+<body class="container">
+<h1>用户列表</h1>
+<div class="form-group">
+    <div class="col-sm-2 control-label">
+        <a href="/toAdd" th:href="@{/toAdd}" class="btn btn-info">add</a>
+    </div>
+</div>
+<div class="with:80%">
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>User Name</th>
+            <th>Password</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr  th:each="list : ${list}">
+            <th scope="row" th:text="${list.id}">1</th>
+            <td th:text="${list.username}">neo</td>
+            <td th:text="${list.password}">Otto</td>
+            <td><a th:href="@{/getid(id=${list.id})}">edit</a></td>
+            <td><a th:href="@{/delete(id=${list.id})}">delete</a></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="panel-footer">
+<c:if test="${pagingVO != null}">
+	<nav style="text-align: center">
+		<ul class="pagination">
+			<li><a href="${pageContext.request.contextPath}/student/showCourse?page=${pagingVO.upPageNo}">&laquo;上一页</a></li>
+			<li class="active"><a href="">${pagingVO.curentPageNo}</a></li>
+			<!-- <c:if test="${pagingVO.curentPageNo+1 <= pagingVO.totalCount}">
+				<li><a href="${pageContext.request.contextPath}/student/showCourse?page=${pagingVO.curentPageNo+1}">${pagingVO.curentPageNo+1}</a></li>
+			</c:if>
+			<c:if test="${pagingVO.curentPageNo+2 <= pagingVO.totalCount}">
+				<li><a href="${pageContext.request.contextPath}/student/showCourse?page=${pagingVO.curentPageNo+2}">${pagingVO.curentPageNo+2}</a></li>
+			</c:if>
+			<c:if test="${pagingVO.curentPageNo+3 <= pagingVO.totalCount}">
+				<li><a href="${pageContext.request.contextPath}/student/showCourse?page=${pagingVO.curentPageNo+3}">${pagingVO.curentPageNo+3}</a></li>
+			</c:if>
+			<c:if test="${pagingVO.curentPageNo+4 <= pagingVO.totalCount}">
+				<li><a href="${pageContext.request.contextPath}/student/showCourse?page=${pagingVO.curentPageNo+4}">${pagingVO.curentPageNo+4}</a></li>
+			</c:if> -->
+			<li><a href="${pageContext.request.contextPath}/student/showCourse?page=${pagingVO.totalCount}">最后一页&raquo;</a></li>
+		</ul>
+	</nav>
+</c:if>
+</div>
+
+</body>
+</html>
